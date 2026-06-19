@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+# 🤖 AI Career Advisor (Next-Gen SaaS Project)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An AI-powered intelligent career guidance platform that analyzes user preferences and generates personalized career recommendations, skill gap analysis, and structured learning roadmaps.
 
-## Available Scripts
+Built using **React + FastAPI + Groq LLM**, this project simulates a real-world AI SaaS product.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> (Add your deployment link here)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+http://localhost:3000
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🧠 AI Career Intelligence
+- Smart career prediction based on user profile
+- Industry-aligned recommendations
+- Alternative career suggestions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📊 Skill Analysis
+- Match score generation (0–10)
+- Skill gap detection
+- Strength evaluation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🗺️ Learning Roadmap
+- Step-by-step learning plan
+- Beginner → Advanced progression
+- Real-world resources suggestions
 
-### `npm run eject`
+### 💻 Modern UI/UX
+- SaaS-style dashboard design
+- Clean gradient theme
+- Responsive layout
+- Scroll-safe result page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend
+- React.js
+- React Router DOM
+- Fetch API / Axios
+- Chart.js (Radar Visualization)
+- React Markdown
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Backend
+- FastAPI
+- Python
+- Pydantic
+- Groq API (LLM Integration)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+frontend/
+├── src/
+│ ├── pages/
+│ │ ├── QuestionnairePage.jsx
+│ │ └── ResultPage.jsx
+│ ├── data/
+│ │ └── questions.js
+│ └── App.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+backend/
+├── main.py
+├── models.py
+└── requirements.txt
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ⚙️ Setup Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/ai-career-advisor.git
+cd ai-career-advisor
+2️⃣ Backend Setup (FastAPI)
+cd backend
+pip install fastapi uvicorn groq
 
-### Advanced Configuration
+Run server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+uvicorn main:app --reload
 
-### Deployment
+Backend runs at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+http://127.0.0.1:8000
+3️⃣ Frontend Setup (React)
+cd frontend
+npm install
+npm start
 
-### `npm run build` fails to minify
+Frontend runs at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+http://localhost:3000
+🔌 API Endpoint
+POST /analyze
+Request:
+{
+  "answers": {
+    "interest": "Data Science",
+    "skill": "Intermediate",
+    "goal": "Job"
+  }
+}
+Response:
+{
+  "result": "AI-generated career roadmap with analysis"
+}
+🧠 How It Works
+User fills questionnaire form
+Frontend sends answers to FastAPI backend
+Groq LLM processes user profile
+AI generates:
+Career recommendation
+Match score
+Skill gaps
+Learning roadmap
+Result is displayed in a modern dashboard UI
+📊 Output Example
+🎯 Career Role: Cybersecurity Analyst / Data Scientist
+📈 Match Score: 8.7/10
+🧠 Skills: Python, Statistics, Problem Solving
+🗺️ Roadmap: Structured 6–12 month plan
+🚀 Future Enhancements
+🔐 User Authentication System
+📄 PDF Download Report
+💬 Chat-based AI Career Assistant
+☁️ Cloud Deployment (Vercel + Render)
+📊 Real-time Analytics Dashboard
+👨‍💻 Author
+
+Jiya Arora
+
+GitHub: https://github.com/your-username
+Project: AI Career Advisor
+⭐ Support
+
+If you like this project:
+
+⭐ Star this repo
+🍴 Fork it
+🚀 Share with friends
